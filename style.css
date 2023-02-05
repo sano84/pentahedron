@@ -1,0 +1,70 @@
+body{
+    background-color: ivory;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+p{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.prism{
+    margin: auto;
+    width: 100px;
+    aspect-ratio: 1/1;
+    
+}
+
+.side{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+
+}
+
+.one{
+    background-color: #63cdda;
+}
+
+.two{
+    background-color: #ea8685;
+}
+
+.three{
+    background-color: #f5cd79;
+} 
+
+.prism{
+    transition: transform 0s linear;
+    transform-style: preserve-3d;
+}
+
+@media(prefers-reduced-motion: no-preference){
+    .prism {
+        transition: transform 0.5s linear;
+    }
+}
+
+.side{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.side.one{
+    transform: rotateY(0deg) translateZ(29px);
+}
+
+.side.two{
+    transform: rotateY(120deg) translateZ(29px);
+}
+
+.side.three{
+    transform: rotateY(240deg) translateZ(29px);
+}
